@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ProyectoMovilesActivity</string>
+    <string name="datos_del_tel_fono">Datos del Teléfono</string>
+    <string name="modelo">Modelo</string>
+    <string name="almaenamiento">Almaenamiento</string>
+    <string name="salud_bateria">Salud Bateria</string>
+    <string name="todo">TODO</string>
+    <string name="eliminar">eliminar</string>
+    <string name="modifcar">modifcar</string>
+    <string name="añadir">Añadir</string>
+    <string name="añadirC">Añadir</string>
+    <string name="moviles">Moviles</string>
+    <string name="clientes">Clientes</string>
+    <string name="añadirM">Añadir</string>
+    <string name="anadir_moviles">Anadir Moviles</string>
+    <string name="button">Button</string>
+</resources>
