@@ -12,8 +12,8 @@ interface ClienteDao {
     @Query("DELETE FROM cliente WHERE nombre=:nombre")
     fun delete(nombre: String): Int
 
-    @Query("SELECT * FROM cliente WHERE appe=:apellido")
-    fun listCliente(apellido: String): List<Cliente>
+    @Query("SELECT * FROM cliente WHERE nombre=:nombre")
+    fun listCliente(nombre: String): List<Cliente>
 
 
     @Insert

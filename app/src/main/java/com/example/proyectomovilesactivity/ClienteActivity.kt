@@ -12,5 +12,6 @@ class ClienteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityClienteBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
     }
 }

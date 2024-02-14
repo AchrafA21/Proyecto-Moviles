@@ -18,6 +18,7 @@ class RecyclerviewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRecyclerviewBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         db = Room.databaseBuilder(
             this, AppDatabase::class.java,
             AppDatabase.DATABASE_NAME
@@ -33,6 +34,11 @@ class RecyclerviewActivity : AppCompatActivity() {
         binding.volver3.setOnClickListener {
             val anadirmovileIntent = Intent(this, Pagina_n2::class.java)
             startActivity(anadirmovileIntent)
+        }
+
+        binding.VolverMen.setOnClickListener {
+            val irMenuPrincipal1Intent = Intent(this, MainActivity::class.java)
+            startActivity(irMenuPrincipal1Intent)
         }
 
     }

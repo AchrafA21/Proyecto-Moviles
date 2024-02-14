@@ -15,15 +15,15 @@
         android:title="Anadir Clientes"
         tools:ignore="HardcodedText" />
     <item
-        android:id="@+id/catalogo"
+        android:id="@+id/catalogoM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="Catalago Moviles"
         tools:ignore="HardcodedText" />
     <item
-        android:id="@+id/editarmoviles"
+        android:id="@+id/catalogoC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="Editar Moviles"
+        android:title="Catalago Clientes"
         tools:ignore="HardcodedText" />
 </menu>

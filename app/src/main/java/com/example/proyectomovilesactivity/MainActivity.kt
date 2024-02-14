@@ -40,9 +40,15 @@ class MainActivity : AppCompatActivity() {
                 true
 
             }
-            R.id.editarmoviles->{
-                val movileedit = Intent(this, MovileActivity::class.java)
-                startActivity(movileedit)
+            R.id.catalogoM->{
+                val RecyclerviewActivityIntent= Intent(this, RecyclerviewActivity::class.java)
+                startActivity(RecyclerviewActivityIntent)
+                true
+
+            }
+            R.id.catalogoC->{
+                val recyclerviewclienteIntent = Intent(this, RecyclerviewClienteActivity::class.java)
+                startActivity(recyclerviewclienteIntent)
                 true
 
             }

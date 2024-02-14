@@ -17,7 +17,9 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/editCliente"
         app:layout_constraintTop_toBottomOf="@+id/appeText"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:ignore="ContentDescription,ImageContrastCheck"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/editCliente"
@@ -29,7 +31,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/telefText"
         app:layout_constraintTop_toBottomOf="@+id/appeText"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/nameText"
@@ -38,7 +41,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:text="Nombre"
+        android:text="@string/nombre"
         app:layout_constraintEnd_toStartOf="@+id/appeText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -50,7 +53,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:text="Apellido"
+        android:text="@string/apellido"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/nameText"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -61,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:text="Telefono"
+        android:text="@string/telefono"
         app:layout_constraintEnd_toStartOf="@+id/editCliente"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/nameText"

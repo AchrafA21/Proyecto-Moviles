@@ -14,14 +14,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/historia_instagram_opiniones_de_clientes_retro_verde" />
+        app:srcCompat="@drawable/historia_instagram_opiniones_de_clientes_retro_verde"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="256dp"
-        android:text="Nombre"
+        android:text="@string/Nombre"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
@@ -36,7 +37,9 @@
         android:ems="10"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView6"
@@ -44,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
-        android:text="Apelldio"
+        android:text="@string/apelldio"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/nombre"
         app:layout_constraintTop_toBottomOf="@+id/nombre" />
@@ -57,14 +60,16 @@
         android:ems="10"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Telefono"
+        android:text="@string/Telefono"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/appellido"
         app:layout_constraintTop_toBottomOf="@+id/appellido" />
@@ -78,17 +83,19 @@
         android:inputType="text"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/guardar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:gravity="right"
-        android:text="guardar"
+        android:text="@string/Guardar"
         app:layout_constraintEnd_toEndOf="@+id/telefono"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="@+id/telefono"
         app:layout_constraintTop_toBottomOf="@+id/telefono"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,RtlHardcoded" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,25 +33,24 @@ class Pagina_n2 : AppCompatActivity() {
             val almacenamiento = binding.almac.text.toString()
             val saludbateria = binding.salud.text.toString()
 
+            // Verificar si algún campo está vacío
+            if (modelo.isEmpty() || almacenamiento.isEmpty() || saludbateria.isEmpty()) {
+                Toast.makeText(this, "Por favor complete todos los campos", Toast.LENGTH_SHORT).show()
+            } else {
+                val movil = Movile(
+                    modelo = modelo,
+                    espacio = almacenamiento,
+                    salud = saludbateria
+                )
 
-            val book = Movile(
-                modelo = modelo,
-                espacio = almacenamiento,
-                salud = saludbateria,
+                db.movileDao().save(movil)
 
-            )
+                Toast.makeText(this, "Móvil agregado con éxito", Toast.LENGTH_SHORT).show()
 
-            db
-                .movileDao()
-                .save(book)
-
-
-            Toast.makeText(this, "Movil agregado con exito", Toast.LENGTH_SHORT)
-                .show()
-
-            val RecyclerviewActivityIntent= Intent(this, RecyclerviewActivity::class.java)
-            startActivity(RecyclerviewActivityIntent)
-
+                val recyclerviewActivityIntent = Intent(this, RecyclerviewActivity::class.java)
+                startActivity(recyclerviewActivityIntent)
+            }
         }
+
     }
 }

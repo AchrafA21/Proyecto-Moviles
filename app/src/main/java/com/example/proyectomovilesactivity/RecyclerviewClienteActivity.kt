@@ -37,6 +37,11 @@ class RecyclerviewClienteActivity : AppCompatActivity() {
             val anadirclienteIntent = Intent(this, Pagina_n1::class.java)
             startActivity(anadirclienteIntent)
         }
+        binding.volverMenu.setOnClickListener {
+            val irMenuPrincipalIntent = Intent(this, MainActivity::class.java)
+            startActivity(irMenuPrincipalIntent)
+        }
+
 
     }
     override fun onResume() {

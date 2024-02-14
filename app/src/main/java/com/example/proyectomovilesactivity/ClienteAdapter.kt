@@ -52,7 +52,7 @@ class ClienteAdapter (
 
             notifyDataSetChanged()
             if (deletedRows == 0) {
-                Toast.makeText(context, "No se ha eliminado ningún Movil", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, "se ha eliminado el Cliente", Toast.LENGTH_LONG).show()
             }
         }
 
@@ -64,7 +64,7 @@ class ClienteAdapter (
 
             notifyDataSetChanged()
             if (deletedRows == 0) {
-                Toast.makeText(context, "No se ha eliminado ningún Movil", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, "No se ha eliminado el Cliente", Toast.LENGTH_LONG).show()
             }
         }
 
