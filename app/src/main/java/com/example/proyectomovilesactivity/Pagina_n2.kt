@@ -52,8 +52,12 @@ class Pagina_n2 : AppCompatActivity() {
 
                 val recyclerviewActivityIntent = Intent(this, RecyclerviewActivity::class.java)
                 startActivity(recyclerviewActivityIntent)
+
             }
         }
 
+
+
     }
+
 }
