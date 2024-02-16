@@ -1,10 +1,12 @@
 package com.example.proyectomovilesactivity
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Toast
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyectomovilesactivity.Modelo.Movile
 import com.example.proyectomovilesactivity.database.dao.AppDatabase
@@ -61,20 +63,13 @@ class MovileAdapter (
             }
         }
 
+      binding.editMovileButton.setOnClickListener {
+          val paginaN2Intent = Intent(context, Pagina_n2::class.java)
+          context.startActivity(paginaN2Intent)
 
-      binding.editMovileButton.setOnClickListener{
-          val deletedRows = db.movileDao().delete(Movile.modelo)
-
-          moviles = db.movileDao().list()
-
-          notifyDataSetChanged()
-          if(deletedRows == 0) {
-              Toast.makeText(context, "No se ha eliminado ningún Movil", Toast.LENGTH_LONG).show()
-          }
       }
 
 
-    }
-
+  }
 
     }

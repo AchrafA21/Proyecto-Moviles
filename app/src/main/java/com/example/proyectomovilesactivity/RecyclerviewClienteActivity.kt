@@ -25,6 +25,7 @@ class RecyclerviewClienteActivity : AppCompatActivity() {
             AppDatabase.DATABASE_NAME
         )
             .allowMainThreadQueries().build()
+        //createInitialData()
 
         binding.recyclerView.layoutManager =
             GridLayoutManager(this, 1, RecyclerView.VERTICAL, false)
@@ -43,6 +44,13 @@ class RecyclerviewClienteActivity : AppCompatActivity() {
         }
 
 
+    }
+
+
+    fun createInitialData() {
+        db.clienteDao().save(Cliente(
+            "Achraf","A.A","654232789"
+        ))
     }
     override fun onResume() {
         super.onResume()

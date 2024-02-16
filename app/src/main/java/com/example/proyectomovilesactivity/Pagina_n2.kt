@@ -12,6 +12,9 @@ import com.example.proyectomovilesactivity.databinding.ActivityPaginaN1Binding
 import com.example.proyectomovilesactivity.databinding.ActivityPaginaN2Binding
 
 class Pagina_n2 : AppCompatActivity() {
+
+
+
     private lateinit var binding: ActivityPaginaN2Binding
     private lateinit var db: AppDatabase
 

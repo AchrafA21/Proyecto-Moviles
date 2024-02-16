@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
+import com.example.proyectomovilesactivity.Modelo.Movile
 import com.example.proyectomovilesactivity.database.dao.AppDatabase
 import com.example.proyectomovilesactivity.databinding.ActivityPaginaN2Binding
 import com.example.proyectomovilesactivity.databinding.ActivityRecyclerviewBinding
@@ -24,7 +25,7 @@ class RecyclerviewActivity : AppCompatActivity() {
             AppDatabase.DATABASE_NAME
         )
             .allowMainThreadQueries().build()
-
+        //createInitialData()
         binding.recyclerView2.layoutManager =
             GridLayoutManager(this, 1, RecyclerView.VERTICAL, false)
         binding.recyclerView2.adapter = MovileAdapter(
@@ -41,6 +42,14 @@ class RecyclerviewActivity : AppCompatActivity() {
             startActivity(irMenuPrincipal1Intent)
         }
 
+        
+
+
+    }
+    fun createInitialData() {
+        db.movileDao().save(Movile(
+            "Samsung","64 Gb","100 %"
+        ))
     }
 
     override fun onResume() {
