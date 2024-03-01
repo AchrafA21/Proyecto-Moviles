@@ -1,6 +1,7 @@
 package com.example.proyectomovilesactivity
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -58,14 +59,8 @@ class ClienteAdapter (
 
 
         binding.editCliente.setOnClickListener {
-            val deletedRows = db.clienteDao().delete(Cliente.nombre)
-
-            clientes = db.clienteDao().list()
-
-            notifyDataSetChanged()
-            if (deletedRows == 0) {
-                Toast.makeText(context, "No se ha eliminado el Cliente", Toast.LENGTH_LONG).show()
-            }
+            val paginaN1Intent = Intent(context, Pagina_n1::class.java)
+            context.startActivity(paginaN1Intent)
         }
 
 
